@@ -67,6 +67,7 @@ function draw() {
     if(score_leftWrist > 0.2) {
         circle(x_leftWrist , y_leftWrist , 20)
         sound_2.stop()
+        sound_1.stop()
         sound_1.play()
         sound_1.setVolume(1)
         sound_1.rate(1)    
@@ -75,6 +76,7 @@ function draw() {
     if(score_rightWrist > 0.2) {
         circle(x_rightWrist , y_rightWrist , 20)
         sound_1.stop()
+        sound_2.stop()
         sound_2.play()
         sound_2.setVolume(1)
         sound_2.rate(1)    
@@ -123,9 +125,9 @@ function draw() {
 }
 
 function play() {
-    sound_2.play()
-    sound_2.setVolume(1)
-    sound_2.rate(1)
+    sound_1.play()
+    sound_1.setVolume(1)
+    sound_1.rate(1)
 }
 
 function stop() {
